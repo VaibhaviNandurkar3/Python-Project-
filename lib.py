@@ -1,9 +1,5 @@
-# Simple Library System using Dictionary
+library = {}
 
-library = {}  # This is our hash table
-
-
-# Add Book
 def add_book():
     isbn = input("Enter ISBN: ")
     title = input("Enter book title: ")
@@ -13,8 +9,6 @@ def add_book():
 
     print("Book added!\n")
 
-
-# Search Book
 def search_book():
     isbn = input("Enter ISBN to search: ")
 
@@ -26,8 +20,6 @@ def search_book():
         print("Book not found.")
     print()
 
-
-# Delete Book
 def delete_book():
     isbn = input("Enter ISBN to delete: ")
 
@@ -38,8 +30,6 @@ def delete_book():
         print("Book not found.")
     print()
 
-
-# Show All Books
 def show_books():
     if len(library) == 0:
         print("Library is empty.\n")
@@ -49,8 +39,6 @@ def show_books():
             print(isbn, "->", library[isbn])
     print()
 
-
-# Main Menu
 while True:
     print("1. Add Book")
     print("2. Search Book")
